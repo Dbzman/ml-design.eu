@@ -10,10 +10,10 @@ theme = "ml-design"
   url = "/"
 
 [[menu.main]]
-  name = "Illustration Sets App"
+  name = "Illustration Sets"
   weight = -100
-  identifier = "illustration-sets-app"
-  url = "/illustration-sets-app"
+  identifier = "illustration-sets"
+  url = "/illustration-sets"
 
 [[menu.main]]
   name = "Poster Lounge"

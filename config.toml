@@ -1,0 +1,34 @@
+baseurl = "http://replace-this-with-your-hugo-site.com/"
+languageCode = "de-de"
+title = "ML-Design"
+theme = "ml-design"
+
+[[menu.main]]
+  name = "Home"
+  weight = -110
+  identifier = "home"
+  url = "/"
+
+[[menu.main]]
+  name = "Illustration Sets App"
+  weight = -100
+  identifier = "illustration-sets-app"
+  url = "/illustration-sets-app"
+
+[[menu.main]]
+  name = "Poster Lounge"
+  weight = -90
+  identifier = "poster-lounge"
+  url = "/poster-lounge"
+
+[[menu.main]]
+  name = "Kontakt"
+  weight = -80
+  identifier = "kontakt"
+  url = "/kontakt"
+
+[[menu.main]]
+  name = "Impressum"
+  weight = -70
+  identifier = "impressum"
+  url = "/impressum"

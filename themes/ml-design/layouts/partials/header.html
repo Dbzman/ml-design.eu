@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ .Title }}</title>
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <script src="/js/bootstrap.min.js"></script>
+
+    <!-- End Piwik Code -->
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 hidden-sm hidden-xs" >
+          <img id="splash" src="/images/splash.png" alt="">
+        </div>
+        <div class="col-md-9" >
+          <img id="logo" src="/images/logo.png" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 hidden-sm hidden-xs" id="menu">
+          {{ range .Site.Menus.main }}
+                <li><a href="{{.URL}}">{{ .Name }}</a></li>
+          {{ end }}
+        </div>
+        <div class="col-md-9">
+      

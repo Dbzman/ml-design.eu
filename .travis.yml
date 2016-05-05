@@ -1,0 +1,17 @@
+language: ruby
+cache:
+  directories:
+    - $HOME/build/Dbzman/ml-design.eu/themes/ml-design/bootstrap-sass/vendor/bundle
+rvm:
+  - 2.2
+
+before_script:
+  - cd themes/ml-design/bootstrap-sass
+  - bundle install --path vendor/bundle
+
+script:
+  - bundle exec compass compile
+
+after_success:
+  - "curl --ftp-create-dirs -T ../static/css/styles.css -u $FTP_USER:$FTP_PASSWORD ftp://$FTP_SERVER/themes/ml-design/static/css/"
+  - "curl $DEPLOY_TRIGGER_URL"

@@ -1,0 +1,45 @@
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+
+// Import Bootstrap for Sass
+@import "bootstrap";
+
+$base_link_color: #6E6E6E;
+$base_text_color: #535653;
+
+.container {
+  max-width: 720px;
+}
+
+body {
+  color: $base_text_color;
+  margin-top: 60px;
+  background-image: url("/images/bg.png");
+}
+
+#splash, #logo {
+  width: 100%;
+}
+
+
+#menu {
+  li {
+    list-style: none;
+    margin-bottom: 5px;
+
+    a {
+      display: inline-block;
+      color: $base_link_color;
+      width: 100%;
+      border-bottom: 1px solid $base_link_color;
+      &:hover {
+        color: lighten($base_link_color, 20%);
+        border-bottom: 1px solid lighten($base_link_color, 20%);
+        text-decoration: none;
+      }
+    }
+  }
+}

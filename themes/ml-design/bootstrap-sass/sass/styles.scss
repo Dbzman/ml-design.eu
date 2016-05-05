@@ -16,8 +16,11 @@ $base_text_color: #535653;
 
 body {
   color: $base_text_color;
-  margin-top: 60px;
   background-image: url("/images/bg.png");
+}
+
+#content {
+  margin-top: 60px;
 }
 
 #splash, #logo {
